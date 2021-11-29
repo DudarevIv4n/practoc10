@@ -1,0 +1,24 @@
+﻿<Window x:Class="Практическая_10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Практическая_10"
+        mc:Ignorable="d"
+         Title="Практическая 10. Вариант 4." Height="278.433" Width="265" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="Файл" Height="20">
+                <MenuItem Header="Выход" Click="Exit_Click"/>
+            </MenuItem>
+            <MenuItem Header="Справка" Height="20">
+                <MenuItem Header="О программе" Click="GetInformation_Click"/>
+            </MenuItem>
+        </Menu>
+        <TextBox x:Name="inputValueA" HorizontalAlignment="Left" Height="23" Margin="57,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="146"/>
+        <Button Content="Заполнить" HorizontalAlignment="Left" Margin="57,165,0,0" VerticalAlignment="Top" Width="146" Click="FillArray_Click"/>
+        <Button Content="Найти" HorizontalAlignment="Left" Margin="57,200,0,0" VerticalAlignment="Top" Width="146" Click="GetCalculations_Click"/>
+        <Label Content="А :" HorizontalAlignment="Left" Margin="19,118,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dataGridMain"  HorizontalAlignment="Left" Height="77" Margin="19,25,0,0" VerticalAlignment="Top" Width="220"/>
+    </Grid>
+</Window>
